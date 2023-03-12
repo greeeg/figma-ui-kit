@@ -19,20 +19,27 @@ yarn add figma-ui-kit
 ```
 
 ```tsx
-import React from 'react'
-import { Stack, Text, Button } from 'figma-ui-kit'
+import React from "react";
+import { Stack, Text, Button } from "figma-ui-kit";
 
-import 'figma-ui-kit/lib/css/base.css'
+import "figma-ui-kit/lib/css/theme.css";
+import "figma-ui-kit/lib/css/base.css";
+import "figma-ui-kit/lib/css/menu.module.css";
 
 const App = () => {
   return (
-    <Stack direction="column" space="medium">
-      <Text>Hello Figma plugin</Text>
-      <Button>Get started</Button>
-    </Stack>
-  )
-}
-
+    <div className="figma-light">
+      <Stack direction="column" space="medium">
+        <Text>Hello Figma plugin</Text>
+        
+        <Stack direction="row" space="small">
+          <Button>Get started</Button>
+          <Button secondary>Go back</Button>
+        </Stack>
+      </Stack>
+    </div>
+  );
+};
 ```
 
 ## Supported components
