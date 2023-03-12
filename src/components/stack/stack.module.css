@@ -1,0 +1,31 @@
+.stack {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.extraSmall {
+  gap: var(--space-extra-small);
+}
+
+.small {
+  gap: var(--space-small);
+}
+
+.medium {
+  gap: var(--space-medium);
+}
+
+.large {
+  gap: var(--space-large);
+}
+
+.extraLarge {
+  gap: var(--space-extra-large);
+}
