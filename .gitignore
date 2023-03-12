@@ -208,5 +208,3 @@ dist
 # .pnp.*
 
 lib/
-/icons
-!/*/icons
