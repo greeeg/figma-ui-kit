@@ -1,6 +1,6 @@
 {
   "name": "figma-ui-kit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A set of React components that replicate the Figma UI for plugins",
   "keywords": [
     "components",
