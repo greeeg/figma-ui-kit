@@ -1,0 +1,3 @@
+src/index.ts
+src/icons/**/*.ts
+lib/
