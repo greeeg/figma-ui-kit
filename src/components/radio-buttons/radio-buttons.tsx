@@ -4,10 +4,11 @@ import React, {
   ReactNode,
   useCallback
 } from 'react'
+import { SpaceValue } from '../../theme'
 
 import { OnValueChange, Props } from '../../types/types'
 import { createClassName } from '../../utilities/create-class-name'
-import { Stack, StackSpace } from '../stack/stack'
+import { Stack } from '../Stack'
 import styles from './radio-buttons.module.css'
 
 const ITEM_ID_DATA_ATTRIBUTE_NAME = 'data-radio-buttons-item-id'
@@ -22,7 +23,7 @@ export type RadioButtonsProps<
   onValueChange?: OnValueChange<Value, Name>
   options: Array<RadioButtonsOption<Value>>
   propagateEscapeKeyDown?: boolean
-  space?: StackSpace
+  spacing?: SpaceValue
   value: null | Value
 }
 export type RadioButtonsOption<
@@ -43,7 +44,7 @@ export function RadioButtons<
   onValueChange = function () {},
   options,
   propagateEscapeKeyDown = true,
-  space = 'small',
+  spacing = '$small',
   value,
   ...rest
 }: Props<HTMLInputElement, RadioButtonsProps<Name, Value>>): JSX.Element {
@@ -74,7 +75,7 @@ export function RadioButtons<
 
   return (
     <div className={styles.radioButtons}>
-      <Stack space={space} direction="column">
+      <Stack spacing={spacing} direction="column">
         {options.map(function (
           option: RadioButtonsOption<Value>,
           index: number

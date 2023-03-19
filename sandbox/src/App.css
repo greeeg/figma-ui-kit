@@ -11,5 +11,4 @@
   height: 300px;
   overflow-y: auto;
   border: 1px solid rgba(0, 0, 0, 0.4);
-  background-color: var(--figma-color-bg);
 }

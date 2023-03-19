@@ -49,6 +49,7 @@
     "react": ">=16"
   },
   "dependencies": {
+    "@stitches/react": "1.2.8",
     "hex-rgb": "5.0.0"
   },
   "devDependencies": {
