@@ -1,0 +1,15 @@
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  background-color: var(--figma-color-bg);
+}

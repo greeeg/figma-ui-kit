@@ -26,6 +26,7 @@
   ],
   "main": "./lib/index.js",
   "scripts": {
+    "start": "yarn parcel sandbox/index.html",
     "prebuild": "npm run clean",
     "build": "concurrently npm:build:generate-colors-types npm:build:generate-icons && npm run build:generate-index && npm run build:js && npm run build:add-js-extension-to-relative-module-paths && npm run build:copy-non-ts-files",
     "build:generate-colors-types": "tsx scripts/generate-colors-types.ts",
@@ -67,7 +68,9 @@
     "fs-extra": "11.1.0",
     "globby": "13.1.3",
     "mkdirp": "1.0.4",
+    "parcel": "2.8.3",
     "prettier": "2.8.1",
+    "process": "0.11.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rimraf": "3.0.2",
