@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react"
+import { HTMLAttributes } from 'react'
 
 export type OnValueChange<Value, Name extends string> = (
   newValue: Value,

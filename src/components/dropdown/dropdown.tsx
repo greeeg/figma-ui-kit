@@ -1,4 +1,13 @@
-import React, { EventHandler, ReactNode, KeyboardEvent, MouseEvent, ChangeEvent, RefObject, useCallback, useRef, useState } from 'react'
+import React, {
+  ReactNode,
+  KeyboardEvent,
+  MouseEvent,
+  ChangeEvent,
+  RefObject,
+  useCallback,
+  useRef,
+  useState
+} from 'react'
 
 import menuStyles from '../../css/menu.module.css'
 import { useMouseDownOutside } from '../../hooks/use-mouse-down-outside'

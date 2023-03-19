@@ -1,4 +1,12 @@
-import React, { ChangeEvent, FocusEvent, KeyboardEvent, MouseEvent, useCallback, useRef, useState } from 'react'
+import React, {
+  ChangeEvent,
+  FocusEvent,
+  KeyboardEvent,
+  MouseEvent,
+  useCallback,
+  useRef,
+  useState
+} from 'react'
 
 import { OnValueChange, Props } from '../../../../types/types'
 import { getCurrentFromRef } from '../../../../utilities/get-current-from-ref'

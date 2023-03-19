@@ -8,12 +8,8 @@ export function useScrollableMenu(options: {
   selectedId: null | string
   setSelectedId: (selectedId: string) => void
 }): {
-  handleScrollableMenuKeyDown: (
-    event: KeyboardEvent<HTMLElement>
-  ) => void
-  handleScrollableMenuItemMouseMove: (
-    event: MouseEvent<HTMLElement>
-  ) => void
+  handleScrollableMenuKeyDown: (event: KeyboardEvent<HTMLElement>) => void
+  handleScrollableMenuItemMouseMove: (event: MouseEvent<HTMLElement>) => void
 } {
   const { itemIdDataAttributeName, menuElementRef, selectedId, setSelectedId } =
     options

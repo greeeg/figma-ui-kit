@@ -1,4 +1,10 @@
-import React, { useCallback, ChangeEvent, ReactNode, KeyboardEvent, Fragment } from 'react'
+import React, {
+  useCallback,
+  ChangeEvent,
+  ReactNode,
+  KeyboardEvent,
+  Fragment
+} from 'react'
 
 import { OnValueChange, Props } from '../../types/types'
 import styles from './tabs.module.css'

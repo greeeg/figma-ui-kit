@@ -1,9 +1,24 @@
-import React, { useCallback, useRef, useState, ChangeEvent, FocusEvent, KeyboardEvent, MouseEvent, ClipboardEvent } from 'react'
+import React, {
+  useCallback,
+  useRef,
+  useState,
+  ChangeEvent,
+  FocusEvent,
+  KeyboardEvent,
+  MouseEvent,
+  ClipboardEvent
+} from 'react'
 
 import { OnValueChange, Props } from '../../../../types/types'
 import { getCurrentFromRef } from '../../../../utilities/get-current-from-ref'
-import { evaluateNumericExpression, isValidNumericInput } from '../../../../utilities/private/evaluate-numeric-expression'
-import { MIXED_NUMBER, MIXED_STRING } from '../../../../utilities/private/mixed-values'
+import {
+  evaluateNumericExpression,
+  isValidNumericInput
+} from '../../../../utilities/private/evaluate-numeric-expression'
+import {
+  MIXED_NUMBER,
+  MIXED_STRING
+} from '../../../../utilities/private/mixed-values'
 import { computeNextValue } from '../../private/compute-next-value'
 import { isKeyCodeCharacterGenerating } from '../../private/is-keycode-character-generating'
 import { formatEvaluatedValue } from './format-evaluated-value'

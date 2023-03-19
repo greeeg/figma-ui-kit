@@ -50,7 +50,9 @@ export function TextboxNumeric<Name extends string>({
         <div className={textboxStyles.icon}>{icon}</div>
       )}
       <div className={textboxStyles.border} />
-      {variant === 'underline' ? <div className={textboxStyles.underline} /> : null}
+      {variant === 'underline' ? (
+        <div className={textboxStyles.underline} />
+      ) : null}
     </div>
   )
 }

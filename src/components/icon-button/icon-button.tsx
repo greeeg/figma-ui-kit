@@ -1,4 +1,9 @@
-import React, { ReactNode, MouseEventHandler, useCallback, KeyboardEvent } from 'react'
+import React, {
+  ReactNode,
+  MouseEventHandler,
+  useCallback,
+  KeyboardEvent
+} from 'react'
 
 import { Props } from '../../types/types'
 import styles from './icon-button.module.css'

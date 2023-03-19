@@ -1,4 +1,13 @@
-import React, { useCallback, useRef, useState, RefObject, ChangeEvent, FocusEvent, KeyboardEvent, MouseEvent } from 'react'
+import React, {
+  useCallback,
+  useRef,
+  useState,
+  RefObject,
+  ChangeEvent,
+  FocusEvent,
+  KeyboardEvent,
+  MouseEvent
+} from 'react'
 
 import { OnValueChange, Props } from '../../../types/types'
 import { createClassName } from '../../../utilities/create-class-name'

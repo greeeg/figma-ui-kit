@@ -1,4 +1,9 @@
-import React, { useCallback, ChangeEvent, ReactNode, KeyboardEvent } from 'react'
+import React, {
+  useCallback,
+  ChangeEvent,
+  ReactNode,
+  KeyboardEvent
+} from 'react'
 
 import { OnValueChange, Props } from '../../types/types'
 import { createClassName } from '../../utilities/create-class-name'
@@ -98,7 +103,9 @@ export function SegmentedControl<
               />
               <div className={styles.children}>
                 <div
-                  className={typeof children === 'string' ? styles.text : undefined}
+                  className={
+                    typeof children === 'string' ? styles.text : undefined
+                  }
                 >
                   {children}
                 </div>

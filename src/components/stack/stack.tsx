@@ -27,13 +27,16 @@ export function Stack({
   ...rest
 }: Props<HTMLDivElement, StackProps>): JSX.Element {
   return (
-    <div {...rest} className={createClassName([
-      styles.stack,
-      styles[space],
-      styles[direction],
-      alignItems ? styles[`align-items-${alignItems}`] : null,
-      justifyContent ? styles[`justify-content-${justifyContent}`] : null,
-    ])}>
+    <div
+      {...rest}
+      className={createClassName([
+        styles.stack,
+        styles[space],
+        styles[direction],
+        alignItems ? styles[`align-items-${alignItems}`] : null,
+        justifyContent ? styles[`justify-content-${justifyContent}`] : null
+      ])}
+    >
       {children}
     </div>
   )

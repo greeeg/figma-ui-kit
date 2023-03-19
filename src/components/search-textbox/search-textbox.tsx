@@ -1,4 +1,11 @@
-import React, { useCallback, useRef, RefObject, ChangeEvent, FocusEvent, KeyboardEvent } from 'react'
+import React, {
+  useCallback,
+  useRef,
+  RefObject,
+  ChangeEvent,
+  FocusEvent,
+  KeyboardEvent
+} from 'react'
 
 import { IconCross32 } from '../../icons/icon-32/icon-cross-32'
 import { IconSearch32 } from '../../icons/icon-32/icon-search-32'

@@ -1,4 +1,9 @@
-import React, { ReactNode, useCallback, KeyboardEvent, ChangeEvent } from 'react'
+import React, {
+  ReactNode,
+  useCallback,
+  KeyboardEvent,
+  ChangeEvent
+} from 'react'
 
 import { IconControlCheckboxChecked12 } from '../../icons/icon-12/icon-control-checkbox-checked-12'
 import { OnValueChange, Props } from '../../types/types'
