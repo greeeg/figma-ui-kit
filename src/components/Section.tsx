@@ -6,7 +6,7 @@ import { Stack } from './Stack'
 
 interface SectionProps {
   title: string
-  children: ReactNode
+  children?: ReactNode
 }
 
 const Border = styled('hr', {
@@ -23,7 +23,7 @@ export const Section = ({ title, children }: SectionProps) => {
         width="100%"
         direction="column"
         spacing="$extraSmall"
-        paddingBottom="$medium"
+        paddingBottom={children !== undefined ? '$medium' : undefined}
       >
         <Box
           height={32}
@@ -36,8 +36,9 @@ export const Section = ({ title, children }: SectionProps) => {
           <Bold>{title}</Bold>
         </Box>
 
-        <Box paddingX="$medium">{children}</Box>
+        {children && <Box paddingX="$medium">{children}</Box>}
       </Stack>
+
       <Border />
     </Stack>
   )
