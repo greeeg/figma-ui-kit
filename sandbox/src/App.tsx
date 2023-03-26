@@ -6,7 +6,7 @@ import './App.css'
 export const App = () => {
   return (
     <div className="container">
-      <Box backgroundColor="$bgBrand">
+      <Box>
         <Stack direction="column" spacing="$large">
           <Text>Hello Sandbox</Text>
           <Text>Hello Sandbox</Text>
