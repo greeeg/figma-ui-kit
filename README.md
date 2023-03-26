@@ -4,7 +4,7 @@
 
 ## The problem
 
-As stated by the Figma team in their developers docs, *it's good practice to make a plugin's UI consistent, to the degree that it is possible, with the rest of the Figma UI. This almost always leads to a better experience for users*.
+As stated by the Figma team in their developers docs, _it's good practice to make a plugin's UI consistent, to the degree that it is possible, with the rest of the Figma UI. This almost always leads to a better experience for users_.
 
 However, there's no official set of React components to quickly build Figma plugins.
 
@@ -19,31 +19,32 @@ yarn add figma-ui-kit
 ```
 
 ```tsx
-import React from "react";
-import { Stack, Text, Button } from "figma-ui-kit";
+import React from 'react'
+import { Stack, Text, Button } from 'figma-ui-kit'
 
-import "figma-ui-kit/lib/css/theme.css";
-import "figma-ui-kit/lib/css/base.css";
-import "figma-ui-kit/lib/css/menu.module.css";
+import 'figma-ui-kit/lib/css/theme.css'
+import 'figma-ui-kit/lib/css/base.css'
+import 'figma-ui-kit/lib/css/menu.module.css'
 
 const App = () => {
   return (
     <div className="figma-light">
       <Stack direction="column" space="medium">
         <Text>Hello Figma plugin</Text>
-        
+
         <Stack direction="row" space="small">
           <Button>Get started</Button>
           <Button secondary>Go back</Button>
         </Stack>
       </Stack>
     </div>
-  );
-};
+  )
+}
 ```
 
 ## Supported components
 
+- Box
 - Banner
 - Button
 - Checkbox
@@ -57,9 +58,11 @@ const App = () => {
 - Layer
 - Loading indicator
 - Preview
+- Properties section
 - Radio buttons
 - Range slider
 - Search textbox
+- Section
 - Segmented control
 - Selectable item
 - Stack
